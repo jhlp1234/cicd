@@ -10,7 +10,7 @@ app.use(cors({
 }))
 
 app.get('/', function(req, res) {
-  res.json('Hi World');
+  res.json('Hi in the World');
 })
 
 app.listen(5000, function() {
