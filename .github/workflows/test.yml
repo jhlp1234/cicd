@@ -19,6 +19,6 @@ jobs:
           script: |
             cd test-cicd/server
             sudo git pull origin main
-            killall node
+            killall node || true
             sudo npm ci
             npm run start
