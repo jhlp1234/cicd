@@ -17,7 +17,7 @@ jobs:
           key: ${{secrets.EC2_KEY}}
           script_stop: true
           script: |
-            cd test-cicd/server
+            cd cicd/server
             killall node || true
             sudo git pull origin main
             sudo npm ci
